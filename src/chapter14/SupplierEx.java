@@ -55,7 +55,8 @@ public class SupplierEx {
     }
 
     private static void supplierExamples() {
-        System.out.println("SupplierExamples.supplierExamples()");
+        System.out.println("SupplierExamples.supplierExamples()" +
+                "");
         final Supplier<String> helloSupplier = () -> "Hello ";
         System.out.println(helloSupplier.get() + "world");
     }
