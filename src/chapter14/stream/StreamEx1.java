@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14.stream;
 
 import java.util.stream.Stream;
 import java.util.*;
@@ -29,6 +29,7 @@ class Student implements Comparable<Student>{
         this.ban = ban;
         this.totalScore = totalScore;
     }
+
 
     public String toString(){
         return String.format("[%s, %d, %d]", name, ban, totalScore);

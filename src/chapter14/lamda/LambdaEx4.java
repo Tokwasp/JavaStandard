@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14.lamda;
 
 import java.util.ArrayList;
 import java.util.HashMap;
