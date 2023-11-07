@@ -12,6 +12,8 @@ public class StreamEx2 {
         Stream<String> filenameStream = fileStream.map(File::getName);
         filenameStream.forEach(System.out::println);
 
+
+
         fileStream = Stream.of(fileArr);
 
         fileStream.map(File::getName)

@@ -9,6 +9,7 @@ public class StreamEx4 {
                 new String[]{"abc","def","jkl"},
                 new String[]{"ABC","DEF","JKL"}
                 );
+
         Stream<String> strStrm = strArrstrm.flatMap(Arrays::stream);
 
         strStrm.map(String::toLowerCase)
