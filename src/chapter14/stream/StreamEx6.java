@@ -18,6 +18,7 @@ public class StreamEx6 {
                 new Student("감자바", 3, 180)
         };
 
+        
         List<String> names = Stream.of(stuArr).map(Student::getName).collect(Collectors.toList());
         System.out.println(names);
 
