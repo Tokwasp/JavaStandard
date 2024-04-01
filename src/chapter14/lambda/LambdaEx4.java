@@ -1,6 +1,7 @@
 package chapter14.lambda;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,15 +11,14 @@ public class LambdaEx4 {
         for(int i=0; i<10; i++){
             list.add(i);
         }
-
         // list 모든요소 출력
-        list.forEach(i -> System.out.print(i+","));
+        list.forEach(i -> System.out.print(i + ","));
         System.out.println();
 
-        list.removeIf(x -> x%2==0 | x%3==0);
+        list.removeIf(x -> x % 2 ==0 || x % 3 == 0);
         System.out.println(list);
 
-        list.replaceAll(i->i*10);
+        list.replaceAll(i -> i*10);
         System.out.println(list);
 
         Map<String, String> map = new HashMap<>();
@@ -29,7 +29,6 @@ public class LambdaEx4 {
 
         map.forEach((k,v) -> System.out.print("{" + k + "," + v + "},"));
         System.out.println();
-
 
     }
 }
